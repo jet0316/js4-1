@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 	$('.button-list').click(function(){
 		console.log('list button has been clicked')
-		$('body').append('<ul><li>Money</li><li>Cars</li><li>Ladies</li></ul>')
+		$('body').append('<ul><li>Number 1</li><li>Number 2</li><li>Number 3</li></ul>')
 	});
 
 	$('.paragraph').hover(function(){
@@ -32,20 +32,14 @@ $(document).ready(function(){
 	});
 
 	$('.giant-button').on('click', function(){
-		$('.popup').append('this is a popup!!').css({
-			'position' : 'fixed',
-			'background-color' : 'peachpuff',
-			'margin' : 'auto',
-			'width' : '50%',
-			'height' : '50%',
-			'top' : '100px',
-			'text-align' : 'center',
-			'verticle-align' : 'middle',
-			'line-height' : '25px'
-		})
+		$('.popup').append('<div class="popup-box">this is a popup!! <br /><button class="close-button">close</button></div>')
+		$('body').css('background-color', 'gray')
+			$('.close-button').on('click', function(){
+			$('.popup-box').hide()
+			$('body').css('background-color', 'white')
+		});
+
 	});
-
-
 
 });
 

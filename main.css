@@ -2,3 +2,15 @@
 	height: 700px;
 	width: 700px;
 }
+
+.popup-box {
+	position: fixed;
+	background-color: peachpuff;
+	height: 50%;
+	width: 50%;
+	text-align: center;
+	top: 25%;
+	left: 25%;
+	text-align: middle;
+	line-height: 250px;
+}
